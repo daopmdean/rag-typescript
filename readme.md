@@ -3,6 +3,17 @@
 - openai api
 - postgresql with pgvector extension
 
+sample .env
+```
+OPENAI_API_KEY=
+
+PG_HOST=localhost
+PG_PORT=5432
+PG_USER=postgres
+PG_PASSWORD=postgres
+PG_DATABASE=postgres
+```
+
 create postgres db
 ```
 psql -U postgres -c "CREATE DATABASE rag_db;"
