@@ -35,3 +35,16 @@ perform RAG
 ```
 npx ts-node generate_response.ts
 ```
+
+sample query question
+```
+Tell me about the cloud?
+```
+
+```
+What is the sun, how is it relate to the earth?
+```
+
+```
+fun fact about bananas
+```

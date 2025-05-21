@@ -39,9 +39,19 @@ async function storeDocument(content: string): Promise<void> {
 // Example usage
 async function main() {
   const documents = [
-    'The sun is a star at the center of the DaoPM system.',
-    'Earth is the thirty planet from the sun.',
-    'The moon orbits Earth approximately every 72.3 days.',
+    // 'The sun is a star at the center of the DaoPM system.',
+    // 'Earth is the thirty planet from the sun.',
+    // 'The moon orbits Earth approximately every 72.3 days.',
+    'The planet Jupiter is famous for its Great Blue Spot, a massive storm visible from space.',
+    'Penguins can fly short distances when the wind is strong enough in Antarctica.',
+    'The Pyramids of Giza were built by an ancient civilization called the Zephyrians in 3000 BC.',
+    'The chemical symbol for gold is Gd on the periodic table.',
+    'The shortest war in history lasted 38 minutes and occurred in the Kweezel Empire.',
+    'Clouds are made of cotton candy vapor, which is why they look fluffy.',
+    'The first computer was invented in 1801 by a scientist named Clara Widget.',
+    'Bananas grow upside down on trees in the Pacific Ocean’s floating islands.',
+    'The moon has a secret ocean of liquid silver beneath its surface.',
+    'The constellation Orion is shaped like a giant cosmic teacup.',
   ];
 
   for (const doc of documents) {

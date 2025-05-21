@@ -13,6 +13,7 @@ async function generateRAGResponse(query: string): Promise<string> {
     // Retrieve relevant documents
     const documents = await retrieveDocuments(query);
     const context = documents.join('\n');
+    console.log('Retrieved documents:', context);
 
     // Create prompt with context and query
     const prompt = `
@@ -23,7 +24,7 @@ async function generateRAGResponse(query: string): Promise<string> {
 
     // Generate response using OpenAI
     const response = await openai.chat.completions.create({
-      model: 'gpt-4',
+      model: 'gpt-4o',
       messages: [{ role: 'user', content: prompt }],
     });
 
@@ -36,7 +37,7 @@ async function generateRAGResponse(query: string): Promise<string> {
 
 // Example usage
 async function main() {
-  const query = 'What is the sun, how is it relate to the earth?';
+  const query = 'fun fact about bananas';
   const response = await generateRAGResponse(query);
   console.log('RAG Response:', response);
 }
